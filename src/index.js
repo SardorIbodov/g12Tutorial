@@ -1,11 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./style.css";
+// import Menu from "./navbar/navbar";
+// import { base } from "./mock";
+// import { database } from "./database";
+// import List from "./list";
+// import Card from "./card";
+import Lesson3 from "./3";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-// const myStyle = {
-//   color: "red",
-//   backgroundColor: "blue",
-// };
-const title = <h1>G12 Intro React</h1>;
-root.render(<React.StrictMode>{title}</React.StrictMode>);
+root.render(
+  <>
+    {/* <Menu data={["Home", "About", "Gallery", "Contact", "Service"]}></Menu>
+    <List data={base} />
+    <div>
+      {database.map(item => {
+				return <Card data={item}/>
+			})}
+    </div> */}
+    <Lesson3 />
+  </>
+);
