@@ -1,6 +1,7 @@
 import React from "react";
 import { database } from "./database";
-
+import { Image, Box, Btn, Container } from "./style";
+import Rasm from "./download.jpg";
 let base = database;
 
 class CRUD extends React.Component {
@@ -14,6 +15,7 @@ class CRUD extends React.Component {
       selectedStudent: null,
       editedFullname: "",
       editedAge: "",
+			test: "test"
     };
   }
   render() {
@@ -79,7 +81,16 @@ class CRUD extends React.Component {
 
     return (
       <div>
+        <Image src={Rasm} alt="Photo" />
+        <Box />
+        <Btn>Salom</Btn>
         <h1>CRUD</h1>
+        <Container>
+          <Box />
+          <Box />
+          <Box />
+        </Container>
+
         <div className="find">
           <input
             type="text"
@@ -177,6 +188,13 @@ class CRUD extends React.Component {
             )}
           </h1>
         ))}
+
+				<button onClick={() => {
+					this.setState({test: "changed"}, () => {
+						console.log(this.state.test, "setState");
+					});
+					console.log(this.state.test);
+				}}>Test button</button>
       </div>
     );
   }

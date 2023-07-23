@@ -1,13 +1,13 @@
 import React from "react";
 import { database } from "./database";
-
+const base = database;
 class Lesson4 extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       firstName: "",
       surName: "",
-      students: database,
+      students: base,
     };
   }
   render() {
@@ -22,10 +22,9 @@ class Lesson4 extends React.Component {
       this.setState({ [target.name]: target.value });
     };
     const onSearch = ({ target: { value } }) => {
-      let filtered = database.filter((s) =>
+      let filtered = base.filter((s) =>
         s.fullName.toLowerCase().includes(value.toLowerCase())
       );
-      console.log(filtered);
       this.setState({ students: filtered });
     };
     return (
