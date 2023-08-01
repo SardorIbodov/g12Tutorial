@@ -18,7 +18,12 @@ import "./style.css";
 // import Todo from "./todo";
 // import Context from "./context/root";
 // import Context2 from "./context2/root";
-import LocalStorage from "./localStorage";
+// import LocalStorage from "./localStorage";
+// import Memo from "./memo";
+// import UseRef from "./useRef";
+// import Carousel from "./carousel";
+// import Fetch from "./fetch";
+import AxiosApi from "./axios";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -42,6 +47,11 @@ root.render(
 		{/* <Todo /> */}
 		{/* <Context /> */}
 		{/* <Context2 /> */}
-		<LocalStorage />
+		{/* <LocalStorage /> */}
+		{/* <Memo /> */}
+		{/* <UseRef /> */}
+		{/* <Carousel /> */}
+		{/* <Fetch /> */}
+		<AxiosApi />
   </>
 );
