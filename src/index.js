@@ -23,7 +23,9 @@ import "./style.css";
 // import UseRef from "./useRef";
 // import Carousel from "./carousel";
 // import Fetch from "./fetch";
-import AxiosApi from "./axios";
+// import AxiosApi from "./axios";
+// import RouterDom5 from "./router dom 5";
+import HouzingAPI from "./api houzing";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -52,6 +54,8 @@ root.render(
 		{/* <UseRef /> */}
 		{/* <Carousel /> */}
 		{/* <Fetch /> */}
-		<AxiosApi />
+		{/* <AxiosApi /> */}
+		{/* <RouterDom5 /> */}
+		<HouzingAPI />
   </>
 );
