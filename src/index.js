@@ -25,7 +25,8 @@ import "./style.css";
 // import Fetch from "./fetch";
 // import AxiosApi from "./axios";
 // import RouterDom5 from "./router dom 5";
-import HouzingAPI from "./api houzing";
+// import HouzingAPI from "./api houzing";
+import RouterDom6 from "./router dom 6";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -56,6 +57,7 @@ root.render(
 		{/* <Fetch /> */}
 		{/* <AxiosApi /> */}
 		{/* <RouterDom5 /> */}
-		<HouzingAPI />
+		{/* <HouzingAPI /> */}
+		<RouterDom6 />
   </>
 );
